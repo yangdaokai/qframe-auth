@@ -11,10 +11,10 @@
 namespace think;
 
 use think\Db;
-use think\Config;
-use think\Session;
-use think\Request;
-use think\Loader;
+use think\facade\Config;
+use think\facade\Session;
+use think\facade\Request;
+use think\facade\Loader;
 
 /**
  * 权限认证类
