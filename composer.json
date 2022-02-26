@@ -1,14 +1,14 @@
 {
-    "name": "qt/qframe-auth",
+    "name": "yangdaokai/qframe-auth",
     "description": "auth package for thinkphp5",
-    "homepage": "https://github.com/developer-hxc/qframe-auth",
+    "homepage": "https://github.com/yangdaokai/qframe-auth",
     "license": "Apache-2.0",
     "minimum-stability": "stable",
     "version": "2.0.0",
     "authors": [
         {
-            "name": "qt",
-            "email": "3365997294@qq.com"
+            "name": "yangdaokai",
+            "email": "1586198062@qq.com"
         }
     ],
     "require": {
