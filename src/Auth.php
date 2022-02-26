@@ -98,10 +98,10 @@ class Auth
      * 类架构函数
      * Auth constructor.
      */
-    public function __construct()
+    public function __construct($key = 'auth')
     {
         //可设置配置项 auth, 此配置项为数组。
-        if ($auth = Config::get('auth')) {
+        if ($auth = Config::get($key)) {
             $this->config = array_merge($this->config, $auth);
         }
         // 初始化request
