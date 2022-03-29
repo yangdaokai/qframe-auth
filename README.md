@@ -3,6 +3,7 @@ The ThinkPHP5 Auth Package
 
 ## 安装
 > composer require yangdaokai/qframe-auth
+> 
 
 ## 配置
 ### 公共配置
