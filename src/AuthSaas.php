@@ -237,7 +237,7 @@ class AuthSaas
             'status' => 1,
         );
         //读取用户组所有权限规则
-        $rules = Db::name($this->config['auth_rule'])->where($map)->field('condition,name')->select();
+        $rules = Db::name($this->config['auth_rule'])->where($map)->field('*')->select();
         //循环规则，判断结果。
         $authList = []; //
         foreach ($rules as $rule) {
