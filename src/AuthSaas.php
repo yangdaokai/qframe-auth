@@ -137,7 +137,8 @@ class AuthSaas
             return true;
         }
         // 获取用户需要验证的所有有效规则列表
-        $authList = $this->getAuthList($uid, $type);
+        list($authList,$rules) =  $this->getAuthList($uid, $type);
+//        $authList = $this->getAuthList($uid, $type);
         if (is_string($name)) {
             $name = strtolower($name);
             if (strpos($name, ',') !== false) {
@@ -260,7 +261,9 @@ class AuthSaas
             Session::set('_auth_list_' . $uid . $t, $authList);
         }
 
-        return array_unique($authList);
+        return [array_unique($authList),$rules];
+
+//        return array_unique($authList);
     }
 
     /**
