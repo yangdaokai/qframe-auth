@@ -262,8 +262,6 @@ class AuthSaas
         }
 
         return [array_unique($authList),$rules];
-
-//        return array_unique($authList);
     }
 
     /**
